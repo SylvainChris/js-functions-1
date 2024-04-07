@@ -237,5 +237,12 @@ console.log();
 
 console.log("13/ Implémentez une fonction qui retourne le nombre de mots dans un texte.");
 
-console.log();
+const sentence = "I am doing fine, thank you"
+
+function countWords(text) {
+    const wordsArray = text.split(' ')
+    return wordsArray.length
+}
+
+console.log(countWords(sentence));
 console.log();
