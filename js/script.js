@@ -153,6 +153,10 @@ console.log(getArrayAverage(arraySix));
 
 console.log("9/ Implémentez une fonction qui retourne une durée en heures et minutes depuis une durée en minutes.");
 
+function getDuration(time) {
+
+}
+
 console.log();
 console.log();
 
@@ -227,10 +231,24 @@ console.log(getMaxObjectKey(objectArrayTwo));
 
 /* ------------------------------------------------------*/
 
-console.log("12/ Implémentez une fonction qui retourne une valeur aléatoire dans un tableau.");
+console.log("12/ Implémentez une fonction qui retourne une valeur aléatoire d'un tableau.");
 
-console.log();
-console.log();
+const arrayNine = [12, 53, 64, 85];
+const arrayTen = ["Manger", "Boire", "Laver", "Dormir"]
+
+/**
+ * Gets a random value of an array
+ * @param {array} array - not empty
+ * @returns {value} - a random value of the array
+ */
+function getRandomArrayValue(array) {
+    let i = Math.floor(array.length * Math.random())
+    return array[i];
+}
+    
+
+console.log(getRandomArrayValue(arrayNine));
+console.log(getRandomArrayValue(arrayTen));
 
 
 /* ------------------------------------------------------*/
